@@ -1,5 +1,6 @@
 # maxkb-api
-This project is to show how to send the api out once you encountered an issue that base_url is not working.
+This project is to show how to send the api out once you encountered an issue that base_url is not working. In this
+project the output is given in openai format.
 
 To get chatting with MaxKB through API, you need to create an API-key first, which could be done in your dashbroad,
 ![image](https://github.com/user-attachments/assets/6726be70-56a4-4054-b8a1-f2a70be37904)
