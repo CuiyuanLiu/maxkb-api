@@ -23,8 +23,9 @@ class RequestMaxKB(BaseModel):
         return super().dict(**kwargs)
 
 class max_db_info:
+    # Please update your application_id and api_key here.
     APIKEY = {
-        "e12a1efa-516f-11f0-989e-0242ac120002": "application-712430c9859d1588f804ee8e3ec264f6"
+        "Your-Application-ID": "application-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     }
     chat_id = ""
 
