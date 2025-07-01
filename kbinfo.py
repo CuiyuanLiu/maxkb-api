@@ -4,6 +4,7 @@ import httpx
 from typing import Optional, Dict, List, Any
 from pydantic import BaseModel
 from fastapi import HTTPException
+from paras import MaxKBParas  
 
 class RequestMaxKB(BaseModel):
     message: str
@@ -24,9 +25,7 @@ class RequestMaxKB(BaseModel):
 
 class max_db_info:
     # Please update your application_id and api_key here.
-    APIKEY = {
-        "Your-Application-ID": "application-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    }
+    APIKEY = MaxKBParas.apikey
     chat_id = ""
 
     @staticmethod
@@ -34,7 +33,7 @@ class max_db_info:
         url = f"{input_url}/{application_id}/chat/open"
         headers = {
             "accept": "application/json",
-            "AUTHORIZATION": max_db_info.APIKEY[application_id]
+            "AUTHORIZATION": max_db_info.APIKEY
         }
         try:
             async with httpx.AsyncClient() as client:
@@ -67,7 +66,7 @@ class max_db_info:
         url = f"{input_url}/chat_message/{chat_id}"
         headers = {
             "accept": "application/json",
-            "AUTHORIZATION": max_db_info.APIKEY[application_id],
+            "AUTHORIZATION": max_db_info.APIKEY,
             "Content-Type": "application/json"
         }
 
