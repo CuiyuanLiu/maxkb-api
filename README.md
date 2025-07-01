@@ -1,2 +1,14 @@
 # maxkb-api
 This project is to show how to send the api out once you encountered an issue that base_url is not working.
+
+To get chatting with MaxKB through API, you need to create an API-key first, which could be done in your dashbroad,
+![image](https://github.com/user-attachments/assets/6726be70-56a4-4054-b8a1-f2a70be37904)
+Notes that, kindly leave the CORS field empty to avoid any CORS issue while getting API-KEY.
+
+Then, go to the API document and get the application_id and chat_id step by step, only with chat_id you could contact
+with the MaxKB using API. For a more detailed maxkb tutorial, please refer to the below website:
+[https://maxkb.cn/docs/](https://maxkb.cn/docs/dev_manual/APIKey_chat/)
+
+I provided both text response and stream response to choose.
+
+Thank you so much for your kind reading.
