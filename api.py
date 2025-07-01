@@ -63,7 +63,7 @@ class MaxKBProxy:
         url = f"{input_url}/chat_message/{chat_id}"
         headers = {
             "accept": "application/json",
-            "AUTHORIZATION": max_db_info.APIKEY[application_id],
+            "AUTHORIZATION": max_db_info.APIKEY,
             "Content-Type": "application/json"
         }
 
